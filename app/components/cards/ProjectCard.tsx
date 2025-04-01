@@ -36,7 +36,7 @@ export function ProjectCard({
         {tags.length > 0 && (
           <p className="text-sm mb-4 text-gray-600">{tags.join(" • ")}</p>
         )}
-        <p className="mb-4 text-gray-700 whitespace-pre-line">{description}</p>
+        <p className="mb-4 text-gray-700 whitespace-pre-line min-h-[170px] overflow-y-auto custom-scrollbar">{description}</p>
         <div className="flex justify-between items-center">
           <div className="flex items-center gap-2">
             <span className="text-sm text-gray-600 hidden md:inline">{url}</span>
