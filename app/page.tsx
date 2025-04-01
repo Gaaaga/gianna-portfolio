@@ -20,12 +20,14 @@ export default function Home() {
             Gianna Song
           </Link>
         </div>
-        <nav className="navbar-nav">
-          <NavButton href="#about">About</NavButton>
-          <NavButton href="#experience">Experience</NavButton>
-          <NavButton href="#projects">Projects</NavButton>
+        <div className="flex items-center">
+          <nav className="navbar-nav">
+            <NavButton href="#about">About</NavButton>
+            <NavButton href="#experience">Experience</NavButton>
+            <NavButton href="#projects">Projects</NavButton>
+          </nav>
           <CallButton />
-        </nav>
+        </div>
       </header>
 
       <main className="flex-1">
@@ -53,12 +55,12 @@ export default function Home() {
         </section> */}
 
         {/* About Section with Profile */}
-        <section id="about" className="min-h-screen flex items-center bg-gray-50 pt-[80px]">
+        <section id="about" className="min-h-screen flex items-center bg-gray-50 pt-[40px] md:pt-[80px]">
           <div className="container mx-auto px-4 py-16">
             {/* <h2 className="text-4xl font-bold text-center mb-16">About Me</h2> */}
 
             <div className="max-w-[1400px] mx-auto">
-              <div className="flex flex-col md:flex-row items-center justify-center gap-16 mb-20">
+              <div className="flex flex-col md:flex-row items-start justify-center gap-16 mb-20">
                 <div className="md:w-1/2">
                   <Image
                     src="/images/gianna-profile.jpg"
@@ -69,15 +71,18 @@ export default function Home() {
                   />
                 </div>
                 <div className="md:w-1/2">
-                  <p className="text-lg mb-6">
-                    Hi, I'm Gianna, a frontend engineer and product thinker with nearly a decade of experience building purposeful digital products.
+                  <p className="text-base mb-6">
+									Hi, I'm Gianna 👋 — a frontend engineer and product thinker with nearly a decade of experience building purposeful digital products.
                   </p>
-                  <p className="text-lg mb-6">
-                    I started my journey in engineering, but found my true passion in crafting experiences where design, technology, and business meet. I've worked end-to-end across design systems, user flows, and technical architecture.
+                  <p className="text-base mb-6">
+									I began my journey in engineering, but quickly found my passion in the intersection of design 🧠, technology 💻, and business ��. Over the years, I've worked across a wide range of industries, from SaaS 🧩 and fintech 💳 to creative tools 🎨, in both fast-paced startups and growing tech companies.
                   </p>
-                  <p className="text-lg">
-                    Now based in Melbourne, I'm continuing my journey solving meaningful problems.
-                  </p>
+                  <p className="text-base  mb-6">
+									I've led and built products end-to-end: from scalable design systems and complex user flows to robust frontend architecture and payment integrations.
+									</p>
+									<p className="text-base">
+									Now based in Melbourne 🇦🇺, I’m continuing my journey solving meaningful problems with code, clarity, and empathy.
+									</p>
                 </div>
               </div>
 

@@ -38,7 +38,9 @@ export function ProjectCard({
         )}
         <p className="mb-4 text-gray-700 whitespace-pre-line">{description}</p>
         <div className="flex justify-between items-center">
-          <span className="text-sm text-gray-600">{url}</span>
+          <div className="flex items-center gap-2">
+            <span className="text-sm text-gray-600 hidden md:inline">{url}</span>
+          </div>
           <Link
             href={url.startsWith('http') ? url : `https://${url}`}
             target="_blank"

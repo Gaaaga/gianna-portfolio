@@ -58,7 +58,7 @@ export const skills = [
   }
 ];
 
-interface Experience {
+export interface Experience {
   id: number;
   company: string;
   role: string;
@@ -66,9 +66,10 @@ interface Experience {
   location: string;
   website?: string;
   description: string;
+  emoji: string;
 }
 
-export const experiences = [
+export const experiences: Experience[] = [
   {
     id: 1,
     company: "MoeGo",
@@ -76,7 +77,8 @@ export const experiences = [
     period: "Sep 2021 – Sep 2024",
     location: "Melbourne, Australia",
     website: "moego.pet",
-    description: "Led multiple product lines from 0 to 1 in a fast-scaling SaaS team, including Online Booking and Branded App.\nOwned end-to-end product lifecycle—from user research to architecture design, implementation, launch, and iteration."
+    description: "Led multiple product lines from 0 to 1 in a fast-scaling SaaS team, including Online Booking and Branded App.\nOwned end-to-end product lifecycle—from user research to architecture design, implementation, launch, and iteration.",
+    emoji: "🐶"
   },
   {
     id: 2,
@@ -86,6 +88,7 @@ export const experiences = [
     location: "Melbourne, Australia",
     website: "polarr.com",
     description: "Contributed to a WebGL-based cross-platform photo editor.\nRefactored architecture for performance and modularity.\nBuilt interactive, high-performance UI components supporting complex editing features.",
+    emoji: "📸"
   },
   {
     id: 3,
@@ -93,15 +96,18 @@ export const experiences = [
     role: "Senior Frontend Engineer",
     period: "Mar 2019 – Sep 2019",
     location: "Melbourne, Australia",
+		website: 'https://www.mucfc.com/',
     description: "Built and maintained frontend for financial products including risk control dashboards and loan management systems.\nCollaborated with backend and data teams to ensure accuracy and performance.",
+    emoji: "💵"
   },
   {
     id: 4,
-    company: "Yunlian Technology",
+    company: "Xstar.io",
     role: "Frontend Engineer",
     period: "Mar 2018 – Feb 2019",
     location: "Melbourne, Australia",
     description: "Worked remotely with a distributed team to deliver responsive web applications for overseas clients.\nInvolved in full development cycle from design to deployment.",
+    emoji: "🪙"
   },
   {
     id: 5,
@@ -110,6 +116,7 @@ export const experiences = [
     period: "Mar 2018 – Feb 2019",
     location: "Melbourne, Australia",
     description: "Participated in internal systems and B2B tools for food supply chain operations.\nFocused on reusable component libraries and UX improvements.",
+    emoji: "🥦"
   },
   {
     id: 6,
@@ -118,5 +125,6 @@ export const experiences = [
     period: "Nov 2015 – Aug 2016",
     location: "Melbourne, Australia",
     description: "Developed data visualization and analysis tools for smart city dashboards and government reporting.",
-  }
+    emoji: "📊"
+  },
 ];
