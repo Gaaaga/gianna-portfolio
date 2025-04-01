@@ -1,21 +1,19 @@
-@keyframes fadeInScale {
+@keyframes scaleIn {
   from {
-    opacity: 0;
     transform: scale(0.95);
   }
   to {
-    opacity: 1;
     transform: scale(1);
   }
 }
 
 .timeline-item {
-  opacity: 0;
+  transform: scale(0.95);
 }
 
 /* Only apply animation when the section first comes into view */
 .experience-section.in-view .timeline-item {
-  animation: fadeInScale 0.5s ease-out forwards;
+  animation: scaleIn 0.5s ease-out forwards;
 }
 
 .experience-section.in-view .timeline-item:nth-child(1) { animation-delay: 0.1s; }
@@ -27,6 +25,6 @@
 
 /* Remove the animation from current item */
 .current-item {
-  opacity: 1;
+  transform: scale(1);
   transition: all 0.3s ease-out;
 }

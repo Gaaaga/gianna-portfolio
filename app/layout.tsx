@@ -13,19 +13,19 @@ export const metadata: Metadata = {
   title: "Gianna Song",
   description: "Frontend Engineer & Product Owner",
   icons: {
-    icon: '/g-logo.png',
-    apple: '/g-logo.png',
+    icon: 'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text y=".9em" font-size="90">👩🏻‍💻</text></svg>',
+    apple: 'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text y=".9em" font-size="90">👩🏻‍💻</text></svg>',
   },
   openGraph: {
     title: "Gianna Song",
     description: "Frontend Engineer & Product Owner",
-    images: ['/g-logo.png'],
+    images: ['data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text y=".9em" font-size="90">👩🏻‍💻</text></svg>'],
   },
   twitter: {
     card: 'summary',
     title: "Gianna Song",
     description: "Frontend Engineer & Product Owner",
-    images: ['/g-logo.png'],
+    images: ['data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text y=".9em" font-size="90">👩🏻‍💻</text></svg>'],
   }
 }
 
@@ -37,8 +37,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/g-logo.png" />
-        <link rel="apple-touch-icon" href="/g-logo.png" />
+        <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👩🏻‍💻</text></svg>" />
+        <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👩🏻‍💻</text></svg>" />
         <meta name="description" content="Frontend Engineer & Product Owner" />
       </head>
       <body className={montserrat.className}>{children}</body>
