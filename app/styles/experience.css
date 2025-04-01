@@ -1,0 +1,32 @@
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.timeline-item {
+  opacity: 0;
+}
+
+/* Only apply animation when the section first comes into view */
+.experience-section.in-view .timeline-item {
+  animation: fadeInScale 0.5s ease-out forwards;
+}
+
+.experience-section.in-view .timeline-item:nth-child(1) { animation-delay: 0.1s; }
+.experience-section.in-view .timeline-item:nth-child(2) { animation-delay: 0.2s; }
+.experience-section.in-view .timeline-item:nth-child(3) { animation-delay: 0.3s; }
+.experience-section.in-view .timeline-item:nth-child(4) { animation-delay: 0.4s; }
+.experience-section.in-view .timeline-item:nth-child(5) { animation-delay: 0.5s; }
+.experience-section.in-view .timeline-item:nth-child(6) { animation-delay: 0.6s; }
+
+/* Remove the animation from current item */
+.current-item {
+  opacity: 1;
+  transition: all 0.3s ease-out;
+}

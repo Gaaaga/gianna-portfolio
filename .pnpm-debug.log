@@ -1,0 +1,21 @@
+{
+  "0 debug pnpm:scope": {
+    "selected": 1
+  },
+  "1 error pnpm": {
+    "code": "ELIFECYCLE",
+    "errno": "ENOENT",
+    "syscall": "spawn",
+    "file": "sh",
+    "pkgid": "my-v0-project@0.1.0",
+    "stage": "dev",
+    "script": "next dev",
+    "pkgname": "my-v0-project",
+    "err": {
+      "name": "Error",
+      "message": "my-v0-project@0.1.0 dev: `next dev`\nspawn ENOENT",
+      "code": "ELIFECYCLE",
+      "stack": "Error: my-v0-project@0.1.0 dev: `next dev`\nspawn ENOENT\n    at ChildProcess.<anonymous> (/Users/gaa/pnpm-global/5/node_modules/.pnpm/pnpm@6.7.4/node_modules/pnpm/dist/pnpm.cjs:92406:22)\n    at ChildProcess.emit (node:events:518:28)\n    at maybeClose (node:internal/child_process:1101:16)\n    at ChildProcess._handle.onexit (node:internal/child_process:304:5)"
+    }
+  }
+}
