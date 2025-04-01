@@ -10,6 +10,8 @@
     "clean": "rm -rf .next node_modules"
   },
   "dependencies": {
+    "@vercel/analytics": "^1.5.0",
+    "@vercel/speed-insights": "^1.2.0",
     "lucide-react": "^0.454.0",
     "next": "15.2.4",
     "react": "^19",
