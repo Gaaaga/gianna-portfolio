@@ -75,7 +75,7 @@ export const experiences: Experience[] = [
     company: "MoeGo",
     role: "Senior Frontend Engineer & Product Owner",
     period: "Sep 2021 – Sep 2024",
-    location: "Melbourne, Australia",
+    location: "",
     website: "moego.pet",
     description: "Led multiple product lines from 0 to 1 in a fast-scaling SaaS team, including Online Booking and Branded App.\nOwned end-to-end product lifecycle—from user research to architecture design, implementation, launch, and iteration.",
     emoji: "🐶"
@@ -85,7 +85,7 @@ export const experiences: Experience[] = [
     company: "Polarr",
     role: "Senior Frontend Engineer",
     period: "Sep 2019 – Mar 2020",
-    location: "Melbourne, Australia",
+    location: "",
     website: "polarr.com",
     description: "Contributed to a WebGL-based cross-platform photo editor.\nRefactored architecture for performance and modularity.\nBuilt interactive, high-performance UI components supporting complex editing features.",
     emoji: "📸"
@@ -95,8 +95,8 @@ export const experiences: Experience[] = [
     company: "Merchants Union Consumer Finance",
     role: "Senior Frontend Engineer",
     period: "Mar 2019 – Sep 2019",
-    location: "Melbourne, Australia",
-		website: 'https://www.mucfc.com/',
+    location: "",
+		website: 'www.mucfc.com',
     description: "Built and maintained frontend for financial products including risk control dashboards and loan management systems.\nCollaborated with backend and data teams to ensure accuracy and performance.",
     emoji: "💵"
   },
@@ -105,7 +105,7 @@ export const experiences: Experience[] = [
     company: "Xstar.io",
     role: "Frontend Engineer",
     period: "Mar 2018 – Feb 2019",
-    location: "Melbourne, Australia",
+    location: "",
     description: "Worked remotely with a distributed team to deliver responsive web applications for overseas clients.\nInvolved in full development cycle from design to deployment.",
     emoji: "🪙"
   },
