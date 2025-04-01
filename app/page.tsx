@@ -75,7 +75,7 @@ export default function Home() {
 									Hi, I'm Gianna 👋 — a frontend engineer and product thinker with nearly a decade of experience building purposeful digital products.
                   </p>
                   <p className="text-base mb-6">
-									I began my journey in engineering, but quickly found my passion in the intersection of design 🧠, technology 💻, and business ��. Over the years, I've worked across a wide range of industries, from SaaS 🧩 and fintech 💳 to creative tools 🎨, in both fast-paced startups and growing tech companies.
+									I began my journey in engineering, but quickly found my passion in the intersection of design 🧠, technology 💻, and business 💼. Over the years, I've worked across a wide range of industries, from SaaS 🧩 and fintech 💳 to creative tools 🎨, in both fast-paced startups and growing tech companies.
                   </p>
                   <p className="text-base  mb-6">
 									I've led and built products end-to-end: from scalable design systems and complex user flows to robust frontend architecture and payment integrations.
