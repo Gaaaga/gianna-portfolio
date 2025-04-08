@@ -72,16 +72,16 @@ export default function Home() {
                 </div>
                 <div className="md:w-1/2">
                   <p className="text-base mb-6">
-									Hi, I'm Gianna 👋 — a frontend engineer and product thinker with nearly a decade of experience building purposeful digital products.
+									Hi🙋🏻‍♀️, I’m Gianna, a frontend engineer with nearly a decade of experience crafting thoughtful, scalable products across SaaS, B2B, and B2C.
+                  </p>
+									<p className="text-base mb-6">
+									From fast-moving MVPs to scalable platforms, I’ve led projects across SaaS, fintech, and creative tools, combining deep technical focus with strong product intuition. I care deeply about building things that are not just functional, but meaningful, grounded in real user needs and delivered with a high bar for quality and clarity.
                   </p>
                   <p className="text-base mb-6">
-									I began my journey in engineering, but quickly found my passion in the intersection of design 🧠, technology 💻, and business 💼. Over the years, I've worked across a wide range of industries, from SaaS 🧩 and fintech 💳 to creative tools 🎨, in both fast-paced startups and growing tech companies.
+									What sets me apart is the way I bridge engineering, product , and design. I believe great software comes not just from clean code, but from understanding the “why” behind every feature, and aligning teams to deliver real impact.
                   </p>
-                  <p className="text-base  mb-6">
-									I've led and built products end-to-end: from scalable design systems and complex user flows to robust frontend architecture and payment integrations.
-									</p>
 									<p className="text-base">
-									Now based in Melbourne 🇦🇺, I’m continuing my journey solving meaningful problems with code, clarity, and empathy.
+									I’m currently based in Melbourne🇦🇺, continuing my journey as a builder, problem solver, and design-driven engineer
 									</p>
                 </div>
               </div>
