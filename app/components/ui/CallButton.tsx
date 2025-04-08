@@ -22,13 +22,21 @@ export function CallButton({ className = "" }: { className?: string }) {
   }
 
   // 10s wave
-  useEffect(() => {
-    const interval = setInterval(() => {
-      triggerWave()
-    }, 10000)
+	useEffect(() => {
+		const timeout = setTimeout(() => {
+			triggerWave()
+		}, 300) // delay
 
-    return () => clearInterval(interval)
-  }, [])
+		const interval = setInterval(() => {
+			triggerWave()
+		}, 10000)
+
+		return () => {
+			clearTimeout(timeout)
+			clearInterval(interval)
+		}
+	}, [])
+
 
   return (
     <button
@@ -37,17 +45,7 @@ export function CallButton({ className = "" }: { className?: string }) {
       onMouseEnter={triggerWave}
       className={`group call-button ${className} hover:shadow-none hover:translate-x-[2px] hover:translate-y-[2px] transition-all cursor-pointer`}
     >
-      <span className="md:hidden">
-        Let's Chat!
-				<span> </span>
-        <span
-          ref={waveRef}
-          className="inline-block"
-        >
-          👋
-        </span>
-      </span>
-      <span className="hidden md:inline">
+      <span>
         Let's Chat!
 				<span> </span>
         <span

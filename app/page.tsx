@@ -81,7 +81,7 @@ export default function Home() {
 									What sets me apart is the way I bridge engineering, product , and design. I believe great software comes not just from clean code, but from understanding the “why” behind every feature, and aligning teams to deliver real impact.
                   </p>
 									<p className="text-base">
-									I’m currently based in Melbourne🇦🇺, continuing my journey as a builder, problem solver, and design-driven engineer
+									I’m currently based in Melbourne🇦🇺, continuing my journey as a builder, problem solver, and design-driven engineer.
 									</p>
                 </div>
               </div>
