@@ -5,7 +5,7 @@ export function NavButton({ href, children }: { href: string; children: ReactNod
   return (
     <Link
       href={href}
-      className="nav-button"
+      className="nav-button hover:shadow-none hover:translate-x-[2px] hover:translate-y-[2px] transition-all"
     >
       {children}
     </Link>
