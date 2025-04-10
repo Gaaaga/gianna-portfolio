@@ -41,7 +41,12 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👩🏻‍💻</text></svg>" />
         <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👩🏻‍💻</text></svg>" />
-        <meta name="description" content="Frontend Engineer & Product Owner" />
+				<meta name="description" content="Gianna Song is a senior frontend engineer with nearly a decade of experience building scalable SaaS and B2C products. Currently based in Melbourne, Australia." />
+				<meta property="og:title" content="Gianna Song – Senior Frontend Engineer in Melbourne" />
+				<meta property="og:description" content="Product-focused frontend engineer with deep experience across SaaS, creative tools, and platform architecture." />
+				<meta property="og:url" content="https://gianna.im" />
+				<meta property="og:type" content="website" />
+				<meta property="og:image" content="https://gianna.im/your-preview-image.jpg" />
 				<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
 				<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
       </head>

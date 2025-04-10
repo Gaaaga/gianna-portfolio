@@ -1,6 +1,5 @@
 "use client"
 import type React from "react"
-import { useEffect } from "react"
 import Link from "next/link"
 import Image from "next/image"
 
@@ -12,18 +11,6 @@ import { ProjectCard } from "./components/cards/ProjectCard"
 import { ExperienceSection } from "./components/sections/ExperienceSection"
 
 export default function Home() {
-	useEffect(() => {
-    if (typeof window !== "undefined") {
-      const url = new URL(window.location.href);
-      const source = url.searchParams.get("utm_source");
-
-      if (source === "resume") {
-        // trigger Vercel pageview log, add flag
-        const trackingPath = "/from-resume";
-        window.history.replaceState({}, "", trackingPath); // clean url
-      }
-    }
-  }, []);
   return (
     <div className="min-h-screen flex flex-col">
       <header className="navbar">
