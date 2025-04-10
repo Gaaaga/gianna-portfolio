@@ -11,7 +11,7 @@ export function Navbar() {
       <div className="navbar-bg-gradient"></div>
       <div className="navbar-brand">
         <Link href="/" className="navbar-brand-link">
-          Gianna Song
+          Gianna
         </Link>
       </div>
       <div className="flex items-center gap-2">
