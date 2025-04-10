@@ -4,7 +4,7 @@ subtitle: "A Deep Dive into the Mindset and Practices of Product-Minded Engineer
 date: "2025-01"
 ---
 
-## Part 1: It Starts with Empathy
+## It Starts with Empathy
 
 > Great products don’t start with specs. They start with empathy.
 
@@ -19,7 +19,7 @@ And more than that — it was the moment I started shifting how I saw my role.
 
 Not just as an engineer writing code, but as someone who builds with context, purpose, and empathy. Someone who asks, *Why does this even matter to the person using it?*
 
-## Part 2: Designing with Purpose
+## Designing with Purpose
 
 > We didn’t start with a spec. We started with a feeling.
 
@@ -41,7 +41,7 @@ A tool that let each business configure their schedule, services, and booking lo
 It didn’t just work. It felt good to use.
 
 
-## Part 3: Thinking Beyond Delivery
+## Thinking Beyond Delivery
 
 > Shipping isn’t the finish line. It’s the starting gate.
 
@@ -55,7 +55,7 @@ Some of our best improvements came from these conversations — things we hadn�
 Over time, Online Booking became not just a tool, but a core part of how many pet businesses ran their daily operations — driving meaningful adoption and helping our platform grow alongside our users.
 
 
-## Part 4: What It Takes to Be Product-Minded
+## What It Takes to Be Product-Minded
 
 Not every engineer needs to be product-minded.
 
@@ -68,7 +68,7 @@ But if you’re curious, here’s what helped me grow into it:
 - **Care.** Not just about clean code, but about whether it actually *matters*.
 
 
-## Part 5: A Final Thought
+## A Final Thought
 
 The best engineers I’ve worked with didn’t just write elegant code — they asked better questions, challenged assumptions, and cared deeply about the people on the other side of the interface.
 
