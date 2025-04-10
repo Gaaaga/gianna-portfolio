@@ -11,7 +11,7 @@ When I joined my last company, we were just 20 people, huddled in Slack threads,
 It was exciting of course. But it was also messy, intense, and sometimes overwhelming.
 
 Everyone talks about startup growth like it’s a rocket ship.
-What they don’t mention is the turbulence.
+Few mention the turbulence.
 
 During that time, I wasn’t just writing code. I was leading product lines, making architectural decisions, designing workflows, supporting junior devs, talking to customers, negotiating trade-offs, and asking myself every day:
 **"How do we keep moving fast, without losing what’s working?"**
