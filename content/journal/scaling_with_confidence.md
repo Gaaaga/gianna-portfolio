@@ -124,7 +124,7 @@ We shipped fast — *and* slept well.
 
 Because velocity that burns people out is just **debt disguised as progress**.
 
-## Conclusion – Scaling is a team sport.
+## Scaling is a team sport.
 
 Looking back, the most valuable things I learned during hypergrowth weren’t in the specs or the codebase.
 
