@@ -5,6 +5,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Analytics } from "@vercel/analytics/react"
 import "./globals.css"
 import "../styles/navbar.css"
+import Script from "next/script"
 
 const montserrat = Montserrat({
   subsets: ['latin'],
@@ -48,12 +49,30 @@ export default function RootLayout({
 				<meta property="og:type" content="website" />
 				<meta property="og:image" content="https://gianna.im/your-preview-image.jpg" />
 				<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
-				<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
       </head>
       <body className={montserrat.className}>
         {children}
         <SpeedInsights />
         <Analytics />
+				{/* Google Analytics */}
+				<Script
+					src="https://www.googletagmanager.com/gtag/js?id=G-NJ7E3KLT9F"
+					strategy="afterInteractive"
+				/>
+				<Script id="ga-script" strategy="afterInteractive">
+					{`
+						window.dataLayer = window.dataLayer || [];
+						function gtag(){dataLayer.push(arguments);}
+						gtag('js', new Date());
+						gtag('config', 'G-NJ7E3KLT9F');
+					`}
+				</Script>
+
+				{/* Calendly Widget */}
+				<Script
+					src="https://assets.calendly.com/assets/external/widget.js"
+					strategy="afterInteractive"
+				/>
       </body>
     </html>
   )
@@ -61,4 +80,3 @@ export default function RootLayout({
 
 
 
-import './globals.css'

@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import { Post } from './page'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
@@ -38,34 +38,51 @@ export default function JournalList({ posts }: { posts: Post[] }) {
         <div className="container mx-auto px-4 py-16">
           <div className="max-w-4xl mx-auto space-y-8">
             {posts.map((post) => (
-              <article key={post.slug} className="bg-white rounded-3xl p-8 border-2 border-black shadow-[4px_4px_0_0_black]">
-                <header className="mb-6">
-                  <h2 className="text-2xl font-bold mb-2">{post.title}</h2>
-                  {post.subtitle && (
-                    <p className="text-lg text-gray-700 mb-2">{post.subtitle}</p>
-                  )}
-                  <time className="text-gray-600 text-sm block">
-                    {new Date(post.date).toLocaleDateString('en-US', {
-                      year: 'numeric',
-                      month: 'long',
-                      day: 'numeric'
-                    })}
-                  </time>
-                </header>
-                <div className="prose prose-lg max-w-none">
-                  <ReactMarkdown
-                    remarkPlugins={[remarkGfm]}
-                    components={MarkdownComponents}
-                  >
-                    {post.content}
-                  </ReactMarkdown>
-                </div>
-              </article>
+              <ExpandableArticle key={post.slug} post={post} />
             ))}
           </div>
         </div>
       </div>
       <Footer />
     </>
+  )
+}
+
+function ExpandableArticle({ post }: { post: Post }) {
+  const [isExpanded, setIsExpanded] = useState(false)
+
+  const toggleExpand = () => {
+    setIsExpanded(!isExpanded)
+  }
+
+  return (
+    <article className="mb-16 bg-white rounded-3xl p-8 border-2 border-black shadow-[4px_4px_0_0_black]">
+      <header className="mb-4">
+        <h2 className="text-2xl font-bold">{post.title}</h2>
+        {post.subtitle && (
+          <p className="text-lg text-gray-700 mb-2">{post.subtitle}</p>
+        )}
+        <time className="text-gray-600 text-sm block">
+          {new Date(post.date).toLocaleDateString('en-US', {
+            year: 'numeric',
+            month: 'long',
+          })}
+        </time>
+      </header>
+      <div className="prose prose-lg max-w-none">
+        <ReactMarkdown
+          remarkPlugins={[remarkGfm]}
+          components={MarkdownComponents}
+        >
+          {isExpanded ? post.content : post.content.split('\n').slice(0, 5).join('\n')}
+        </ReactMarkdown>
+      </div>
+      <button
+        onClick={toggleExpand}
+        className="mt-4 text-blue-500 hover:underline"
+      >
+        {isExpanded ? 'Show Less' : 'Show More'}
+      </button>
+    </article>
   )
 }
