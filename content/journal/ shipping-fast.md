@@ -24,7 +24,7 @@ This post is about how we learned to ship quickly — without breaking the trust
 ## 1. Start with Constraints, Not Speed
 *“We weren’t just moving fast. We were moving within boundaries.”*
 
-When we first started designing MoeGo’s Online Booking system, the pressure to move fast was real. We had a growing user base, a feature request list that kept expanding, and competitors catching up.
+When we first started designing the Online Booking system, the pressure to move fast was real. We had a growing user base, a feature request list that kept expanding, and competitors catching up.
 
 It would’ve been easy to cram in everything — flexible settings, payment integrations, custom rules, multi-step forms. But we didn’t.
 

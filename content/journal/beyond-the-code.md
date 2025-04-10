@@ -14,7 +14,7 @@ She wasn’t looking for “another software.” She just wanted something that 
 
 That moment stuck with me.
 
-It became the starting point of our Online Booking project at MoeGo.
+It became the starting point of our Online Booking project at my last company.
 And more than that — it was the moment I started shifting how I saw my role.
 
 Not just as an engineer writing code, but as someone who builds with context, purpose, and empathy. Someone who asks, *Why does this even matter to the person using it?*
