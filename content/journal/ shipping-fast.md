@@ -40,7 +40,7 @@ We didn’t launch big. We launched *carefully*.
 And that made all the difference.
 
 
-## 2. Talk to Users *Before* You Ship
+## 2. Talk to Users Before You Ship
 *“We asked questions before we wrote code.”*
 
 One of the most effective things we did — and honestly, one of the simplest — was talk to users before we started building.

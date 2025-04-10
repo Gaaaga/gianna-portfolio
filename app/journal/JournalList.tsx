@@ -24,6 +24,21 @@ const MarkdownComponents: Components = {
       {children}
     </blockquote>
   ),
+  ul: ({ children, ...props }) => (
+    <ul className="list-disc list-inside my-4 text-gray-700" {...props}>
+      {children}
+    </ul>
+  ),
+  ol: ({ children, ...props }) => (
+    <ol className="list-decimal list-inside my-4 text-gray-700" {...props}>
+      {children}
+    </ol>
+  ),
+  li: ({ children, ...props }) => (
+    <li className="mb-2" {...props}>
+      {children}
+    </li>
+  ),
 }
 
 export default function JournalList({ posts }: { posts: Post[] }) {
