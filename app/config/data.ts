@@ -77,7 +77,7 @@ export const experiences: Experience[] = [
     period: "Sep 2021 – Sep 2024",
     location: "",
     website: "moego.pet",
-    description: "MoeGo is a SaaS platform serving the pet grooming industry, offering tools for scheduling, customer management, payments, and communication.\nI joined MoeGo when the team was just 20 people and supported its rapid growth to over 200 employees in two years. \nAs the company scaled, I stepped into a leadership position where I owned the direction and delivery of MoeGo’s customer-facing product line.\nWorking in a fast-paced environment, I helped shape the company’s product direction, led multiple cross-functional initiatives, and collaborated closely with design, sales, and marketing. \nWhat I loved most was the opportunity to work so closely with our customers, from small business owners to large franchises, and see how our work directly helped them run and grow their businesses. \nIt was a deeply rewarding experience that shaped how I think about product, impact, and leadership.",
+    description: "MoeGo is a SaaS platform serving the pet grooming industry, offering tools for scheduling, customer management, payments, and communication.\nI joined MoeGo when the team was just 20 people and supported its rapid growth to over 200 employees in two years. \nAs the company scaled, I stepped into a leadership position where I owned the direction and delivery of MoeGo's customer-facing product line.\nWorking in a fast-paced environment, I helped shape the company's product direction, led multiple cross-functional initiatives, and collaborated closely with design, sales, and marketing. \nWhat I loved most was the opportunity to work so closely with our customers, from small business owners to large franchises, and see how our work directly helped them run and grow their businesses. \nIt was a deeply rewarding experience that shaped how I think about product, impact, and leadership.",
     emoji: "🐶"
   },
   {
@@ -87,7 +87,7 @@ export const experiences: Experience[] = [
     period: "Sep 2019 – Mar 2020",
     location: "",
     website: "polarr.com",
-    description: "Polarr is a creative tools company best known for its professional photo editing application used by millions of creators across platforms.\nI joined the team to help rebuild the core Polarr Photo Editor, a cross-platform WebGL-based application running on web, desktop, and mobile.\nAt Polarr, I worked closely with designers and core engineers to refactor the frontend architecture, separating the WebGL rendering engine from the UI layer built in React and TypeScript.\nWhat made this experience truly memorable was the deeply design-driven culture. Many team members were also passionate photographers and heavy users of the product. That created a rare kind of feedback loop, where every UI detail mattered. It gave me a lasting appreciation for building creative tools that don’t just function well, but feel intuitive and empowering to use.",
+    description: "Polarr is a creative tools company best known for its professional photo editing application used by millions of creators across platforms.\nI joined the team to help rebuild the core Polarr Photo Editor, a cross-platform WebGL-based application running on web, desktop, and mobile.\nAt Polarr, I worked closely with designers and core engineers to refactor the frontend architecture, separating the WebGL rendering engine from the UI layer built in React and TypeScript.\nWhat made this experience truly memorable was the deeply design-driven culture. Many team members were also passionate photographers and heavy users of the product. That created a rare kind of feedback loop, where every UI detail mattered. It gave me a lasting appreciation for building creative tools that don't just function well, but feel intuitive and empowering to use.",
     emoji: "📸"
   },
   {
@@ -129,3 +129,60 @@ export const experiences: Experience[] = [
     emoji: "📊"
   },
 ];
+
+export interface Project {
+  id: string
+  title: string
+  image: string
+  description: string
+  tags: string[]
+  color: string
+  url: string
+}
+
+export const projects: Project[] = [
+  {
+    id: "moego-branded-app",
+    title: "MoeGo Branded App",
+    image: "/images/moego-branded-app.png",
+    description: `A white-label mobile app platform for pet businesses, built with React Native.
+Businesses can offer fully branded apps with scheduling, messaging, payment, and real-time tracking—all seamlessly connected to MoeGo's ecosystem.
+→ Helped MoeGo secure multiple enterprise accounts with this scalable solution.`,
+    tags: [],
+    color: "bg-[#FFD6D6]",
+    url: "moego.pet/pet-parent-portal"
+  },
+  {
+    id: "moego-booking",
+    title: "MoeGo Online Booking System",
+    image: "/images/moego-booking.png",
+    description: `A powerful and flexible scheduling platform that lets pet businesses customize every step of their booking flow.
+I led the architecture, frontend system, and the launch of Business Homepage and Abandoned Booking Recovery features.
+→ more than 1/3 of MoeGo's total appointments now come through this product.`,
+    tags: [],
+    color: "bg-[#E0DBFF]",
+    url: "moego.pet/online-booking-feature"
+  },
+  {
+    id: "moego-website",
+    title: "MoeGo Official Website",
+    image: "/images/moego-website.png",
+    description: `A conversion-focused marketing website built with performance and brand storytelling in mind.
+I led the full redesign, from content strategy to code, bringing MoeGo's brand to life with high-impact visuals and interactions.
+→ Significantly increased user engagement and lead conversion.`,
+    tags: [],
+    color: "bg-[#FF5500]",
+    url: "moego.pet"
+  },
+  {
+    id: "polarr-editor",
+    title: "Polarr Photo Editor",
+    image: "/images/polarr-editor.png",
+    description: `A fast, responsive, cross-platform photo editor available on Web, macOS, Windows, Android, and iOS.
+Built high-performance UI components and refactored the architecture to decouple WebGL rendering from interface logic.
+→ Ensured smooth editing even for complex photo operations.`,
+    tags: [],
+    color: "bg-[#00C172]",
+    url: "photoeditor.polarr.co"
+  }
+]
