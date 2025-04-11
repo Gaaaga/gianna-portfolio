@@ -7,6 +7,8 @@ import remarkGfm from 'remark-gfm'
 import { Navbar } from "../components/layout/Navbar"
 import { Footer } from "../components/layout/Footer"
 import type { Components } from 'react-markdown'
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
+import { oneLight } from 'react-syntax-highlighter/dist/cjs/styles/prism'
 
 const MarkdownComponents: Components = {
   h2: ({ children, ...props }) => (
@@ -25,7 +27,7 @@ const MarkdownComponents: Components = {
     </blockquote>
   ),
   ul: ({ children, ...props }) => (
-    <ul className="list-disc list-inside my-4 text-gray-700" {...props}>
+    <ul className="list-disc list-inside my-2 text-gray-700" {...props}>
       {children}
     </ul>
   ),
@@ -39,6 +41,27 @@ const MarkdownComponents: Components = {
       {children}
     </li>
   ),
+  code: ({ inline, className, children, ...props }: { inline?: boolean; className?: string; children?: React.ReactNode }) => {
+    const language = className?.replace('language-', '') || '';
+    return inline ? (
+      <code
+        className="bg-gray-200 text-red-600 rounded px-1 py-0.5 text-sm font-mono border border-gray-300 whitespace-nowrap"
+        {...props}
+      >
+        {children}
+      </code>
+    ) : (
+      <SyntaxHighlighter
+        language={language}
+        style={oneLight}
+        PreTag="div"
+        className="bg-gray-100 rounded-md p-4 overflow-x-auto"
+        {...props}
+      >
+        {String(children).trim()}
+      </SyntaxHighlighter>
+    );
+  },
 }
 
 export default function JournalList({ posts }: { posts: Post[] }) {
