@@ -5,6 +5,14 @@ export function CallButton({ className = "" }: { className?: string }) {
 
   const openCalendly = () => {
     if (typeof window !== "undefined" && window.Calendly?.initPopupWidget) {
+			//  Google Analytics Event
+      if (typeof window !== "undefined" && typeof (window as any).gtag === "function") {
+				(window as any).gtag("event", "click_chat_button", {
+					event_category: "engagement",
+					event_label: "ChatButton – Calendly Chat",
+				})
+			}
+
       window.Calendly?.initPopupWidget({
         url: "https://calendly.com/gaa-song/30min",
       })
